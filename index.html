@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="scoreboard">
+        <div>X Wins: <span id="xScore">0</span></div>
+        <div>O Wins: <span id="oScore">0</span></div>
+        <div>Draws: <span id="drawScore">0</span></div>
+    </div>
+
+    <div class="mode-select">
+        <button onclick="setMode('player')">2 Player</button>
+        <button onclick="setMode('ai')">Play vs AI</button>
+    </div>
+
+    <div id="board"></div>
+
+    <div id="status"></div>
+
+    <button class="restart" onclick="restartGame()">Restart Game</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
